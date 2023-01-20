@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>location</title>
+    <style>
+         * {
+        margin: 0;
+        padding: 0;
+        font-family: 'SUIT-Regular';
+    }
+    #wrap {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto ;
+        /* border: 1px solid red; */
+
+    }
+    header{
+        height: 165px;
+        /* border: 1px solid blue; */
+        
+    }
+    a {
+        text-decoration: none;
+    }
+    #logo {
+        float: left;
+    }
+    #top_menu {
+        overflow: hidden;
+        /* border: 3px solid teal; */
+        
+        
+    }
+    #top_menu ul {
+        list-style: none;
+       float: right;
+       padding-right: 20px;
+       margin-top: 10px;
+    
+    }
+
+    #top_menu ul li {
+        float : left;
+        margin-right: 10px;
+        
+    }
+    #main_menu {
+        width: 900px;
+        overflow: hidden;
+        margin: auto;
+        /* border: 1px solid yellowgreen; */
+        padding-left: 80px;
+        text-align: center;
+        
+        
+        
+        
+    }
+    #main_menu li {
+        /* border: 1px solid blue; */
+        width: 24%;
+        height: 25px;
+        float: left;
+        text-align: center;
+        list-style: none;
+        background-color:  rgb(226, 221, 242);
+        margin-bottom: 100px;
+        
+        
+    }
+    #main_menu a{
+        color:mediumslateblue;
+        font-weight: 650;
+        font-family: 'SUIT-Regular';
+        overflow: hidden;
+        
+    }
+
+    .submenu li {
+        line-height: 25px;
+        background-color: rgb(226, 221, 242) !important;
+        text-align: center;
+        margin: 0px auto 0px auto !important;
+        float: none !important;
+        width: 95% !important;
+        color:rgb(255, 252, 232) !important;
+        font-size: 15px;
+        font-weight: bolder;
+        
+        
+    }
+    .submenu li a {
+        color:darkgray !important;
+    }
+
+
+    .submenu {
+        height: 0px;
+        overflow: hidden;
+        z-index:1;
+        position: relative;
+    }
+  
+    .a {
+        border-radius:12px 0 0 12px;
+    }
+    .b {
+        border-radius:0 12px 12px 0;
+    }
+    #main_menu li:hover{
+        background-color: #c7cfef;
+        transition-duration: 0.5s;
+    
+    }
+    #main_menu li:hover .submenu {
+        height: 100px;
+        transition-duration: 1s;
+        
+    }
+     .submenu a:hover{
+        color:mediumslateblue !important;
+    }
+    .c{
+        border-radius: 10px 10px 0 0 ;
+    }
+    .d{
+        border-radius: 0 0 10px 10px;
+    }
+    #loc{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+   
+    /* main */
+    section {
+        width: 100%;
+        /* border: 1px solid blue; */
+        text-align: center;
+    }
+    /* footer */
+    footer {
+        height: 150px;
+        /* border: 10px solid red; */
+        background-color: #c7cfef;
+        text-align: center;
+        
+    }
+   
+    .clear{
+        clear:both;
+    }
+
+    footer img {
+        height: 100%;
+        display: inline-block;
+    }
+
+    footer ul{
+        list-style: none;
+        display: inline-block;
+        position: relative;
+        top: -10px;
+    }
+
+    #footer_last{
+        background-color: #c7cfef;
+    }
+    #address {
+        font-size: 13px;
+    }
+    p {
+        /* width: 100px; height: 50px; border: 1px solid blue; */
+            position: fixed;
+            top: 500px; right: -20px;
+            /* left: 3px; */
+            
+    }
+    @font-face {
+        font-family: 'SUIT-Regular';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <!-- header 시작-->
+        <header>
+        <a href="main.html"><img id="logo" src="./img/logo.png"></a>
+        <nav id="top_menu">
+            <ul>
+                <li><a href="login.html"><img src="img/login.png"></a></li>
+                <li><a href="cart.html"><img src="img/cart.png"></a></li>
+                <li><a href="mypage.html"><img src="img/my page2.png"></a></li>
+                <li><a href="#"><img src="img/serch2.png"></a></li>
+                
+            </ul>
+        </nav>
+        <div class="clear"></div>
+        <nav id="main_menu">
+            <ul>
+                <li class="a">
+                    <a href="menu.html">MENU</a>
+                    <ul class="submenu">
+                        <li class="c"><a href="menu.html"> 전체 </a></li>
+                        <li><a href="#"> 도넛 </a></li>
+                        <li class="d"><a href="#"> 케이크 </a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">SHOP</a>
+                    <ul class="submenu">
+                        <li class="c"><a href="#">LIFE</a></li>
+                        <li class="d"><a href="#">FASHION</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="community.html">COMMUNITY</a>
+                    <ul class="submenu">
+
+                    </ul>
+                </li>
+
+                <li class="b">
+                    <a href="location.html">LOCATION</a>
+                    <ul class="submenu">
+
+                    </ul>
+                </li>
+              
+                
+            </ul>
+        </nav>
+        </header>
+
+        <!--main-->
+        <section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12615.814067991674!2d128.8761274!3d37.7676881!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x52353cbd21e7c086!2z64-M7LK07YWM66as7JWE!5e0!3m2!1sko!2skr!4v1673876854274!5m2!1sko!2skr" width="900" height="750" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="loc"></iframe>
+            <p><img src="img/smile.png"></p>
+
+        </section>
+
+         <!-- footer -->
+    <footer>
+
+        
+        <div id ="footer_last">
+        <img id="footer_logo" src="img/logo3.png"> 
+        <ul id="address">
+            <li>상호명  ㈜ 돌체테리아 | 대표 : 명성아</li>
+            <li>IBK 기업은행  127 125307 04 016 ㈜ 돌체테리아</li>
+            <li>사업자등록번호 :680 - 87 - 01219 | 통신판매업신고번호 : 제 2021-강원강릉-0504호 </li>
+            <li>강원도 강릉시 교동 하슬라로 206번길 4-3 1층 Dolceteria</li>
+            <li>CS Center : 홈페이지 내 문의글로 작성부탁드립니다.</li>
+            <li>(택배관련 모든 문의는 기타 게시판에 남겨주세요)</li><br>
+            <li>Copyright ⓒ 2023 Dolceteria All rights reserved.</li>
+        </ul>
+        </div>
+        
+    </footer>
+</div>
+    
+</body>
+</html>

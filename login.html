@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style/popupStyle.css">
+    <title>login page</title>
+</head>
+<body>
+
+    <main id="main-holder">
+        <h3 id="close">X</h3>
+        <h1 id="login-header">Login</h1>
+        
+        <div id="login-error-msg-holder">
+          <p id="login-error-msg">잘못된 아이디 <span id="error-msg-second-line">비밀번호 입니다.</span></p>
+        </div>
+        
+        <form id="login-form">
+          <input type="text" name="username" id="username-field" class="login-form-field" placeholder="User name">
+          <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+          <input type="submit" value="Login" id="login-form-submit">
+          <input type="submit" onclick="window.open('sign_up.html')" value="Sign-Up" id="Sign-up-form-submit">
+        </form>
+      
+      </main>
+    
+</body>
+<script src="script/popUpScript.js"></script>
+</html>

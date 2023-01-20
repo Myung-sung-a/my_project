@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <style>
+        html, body {
+        height: 100%;
+        overflow-y : hidden;
+        
+        }
+
+        #main-holder {
+            position: relative;
+            /* border: 1px solid red; */
+            width: 500px;
+            height: 600px;
+
+        }
+        body {
+        overflow-x: hidden;
+        font-family: 'SUIT-Regular';
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        background-color: rgba(58,58,58,0.7);
+        }
+
+        #main-holder {
+        
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 7px;
+        box-shadow: 0px 0px 5px 2px black;
+        }
+        #close{
+            position: absolute;
+            top: 1px;
+            left: 470px;
+            cursor: pointer;
+        }
+        ul{
+            /* border: 1px solid red; */
+            list-style: none;
+            font-family: 'SUIT-Regular';
+            font-size: 20px;
+            margin-bottom: 50px;
+            padding-left: 0;
+            
+        }
+        @font-face {
+        font-family: 'Humanbumsuk';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Humanbumsuk.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'SUIT-Regular';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+    }
+   
+        
+
+    </style>
+</head>
+<body>
+    
+    <main id="main-holder">
+        <h3 id="close">X</h3>
+        <div><img src="img/photo2.png" width="320px"></div>
+
+        <ul class="menu_sub">
+            <li style="font-weight: bold; font-size: 30px;" >우유 생크림 도넛</li><br>
+            <li style="color: rgb(166, 166, 166);">3500원</li><br>
+            <li>시그니쳐 크림과 바닐라 크림이 어울어진 대표 도넛</li><br>
+            <a href=#none id="show" onclick="if(hide.style.display=='none') {hide.style.display='';show.innerText='알레르기 유발 요인 ▼ '} 
+                else {hide.style.display='none';show.innerText=' 알레르기 유발 요인 ▼'}">알레르기 유발 요인 ▼</a>
+
+                <div  id="hide" style="display: none">
+                    밀, 우유, 대두, 계란 함유 ▲ 
+                </div>
+
+        </ul>
+        <script src="script/popUpScript.js"></script>
+    
+</body>
+</html>
